@@ -50,7 +50,6 @@ with open('teste1.txt', 'r') as arquivo:
                     for num in c2:
                         c3.append((n,num)) 
                 print(set(c3))
-        i += 2
 print("União: conjunto1 {}, conjunto 2 {}. Resultado: {}".format(u1, u2, u3))
 print("Interseção: conjunto1 {}, conjunto 2 {}. Resultado: {}".format(i1, i2, i3))
 print("Diferença: conjunto1 {}, conjunto 2 {}. Resultado: {}".format(d1, d2, d3))
