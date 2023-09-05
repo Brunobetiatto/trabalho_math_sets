@@ -58,7 +58,7 @@ with open('teste1.txt', 'r') as arquivo:
     linhas = arquivo.readlines()  # le as linhas do arquivo
     for i, linha in enumerate(linhas):
         vetor = linha.split
-        if uniao == linha[0]:
+        if uniao == linha[0] and linha[1] == '\n':
             if i + 1 < len(linhas):
                 l1 = linhas[i+1].strip().split(', ')  # strip para eliminar os espaços entre linhas e o split para dividir entre as vírgulas
                 u1 = {str(elementos) for elementos in l1}
@@ -68,7 +68,7 @@ with open('teste1.txt', 'r') as arquivo:
 
                 u3 = u1.union(u2)  # função do set para juntar
                 print(u3)
-        elif inter == linha[0]:
+        elif inter == linha[0] and linha[1] == '\n':
              if i + 1 < len(linhas):
                 l1 = linhas[i+1].strip().split(', ')
                 i1 = {str(elementos) for elementos in l1}
@@ -77,7 +77,7 @@ with open('teste1.txt', 'r') as arquivo:
                 i2 = {str(elemento) for elemento in l2}
                 i3 = i1 & i2
                 print(i3)
-        elif diff == linha[0]:
+        elif diff == linha[0] and linha[1] == '\n':
              if i + 1 < len(linhas):
                 l1 = linhas[i+1].strip().split(', ')
                 d1 = {str(elementos) for elementos in l1}
@@ -86,7 +86,7 @@ with open('teste1.txt', 'r') as arquivo:
                 d2 = {str(elemento) for elemento in l2}
                 d3 = d1.difference(d2)
                 print(d3)
-        elif carte == linha[0]:
+        elif carte == linha[0] and linha[1] == '\n':
             if i + 1 < len(linhas):
                 l1 = linhas[i+1].strip().split(', ')
                 c1 = {str(elementos) for elementos in l1}
