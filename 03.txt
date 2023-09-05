@@ -1,0 +1,13 @@
+4
+I
+pato, cachorro, 1, 2
+3, 4, 1, 2
+D
+9, d, e, t
+4, y, 5, e, d
+U
+0, 4, 3, 1, lol
+d, f, g, 23
+C
+20, 3, 4, 45
+de, da, di, do, du
