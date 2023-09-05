@@ -1,0 +1,13 @@
+4
+C
+L, 2, maça, 3, 1
+pato, 5, 2, 1, maça
+D
+um, dois, 3, 4
+cinco, 4, dois, um
+I
+carro, moto, onibus
+aviao, carro, bike, heli, moto
+U
+9, 0, 2, ying, sp
+yang, 0, 3, 6, 10, 9, sp 
