@@ -3,7 +3,7 @@ uniao = "U"
 inter = "I"
 diff = "D"
 carte = "C"
-with open('D:/RAPHA/Documents/ex.txt', 'r') as arquivo:
+with open('D:/RAPHA/Documents/ex2.txt', 'r') as arquivo:
     # Use um loop para iterar pelas linhas do arquivo
     linhas = arquivo.readlines()#le as linhas do arquivo
     for i,linha in enumerate(linhas):
@@ -41,15 +41,17 @@ with open('D:/RAPHA/Documents/ex.txt', 'r') as arquivo:
                 d2 = {(elemento) for elemento in l2}
                 d3 = d1.difference(d2)
                 print(d3)
-                            
-            
+        elif carte in linha:
+            if i + 1 < len(linhas):
+                l1 = linhas[i+1].strip().split(', ')
+                c1 = {(elementos) for elementos in l1}
                 
-        # Leia cada linha e faça o que desejar com ela
-         # Uc1 = {linhas[i+1]}
-              #  c2 = {linhas[i+2]}
-               # c1.update(c2)
-               # print(c1)
-       
-
-
-
+                l2 = linhas[i+2].strip().split(', ')
+                c2 = {(elemento) for elemento in l2}
+                c3 = []
+                
+                for n in c1:
+                    for num in c2:
+                        c3.append((n,num))
+                print(c3)
+        
